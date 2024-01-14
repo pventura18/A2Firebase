@@ -1,0 +1,56 @@
+﻿<Window x:Class="A2Firebase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2Firebase"
+        mc:Ignorable="d"
+        xmlns:UI="clr-namespace:Firebase.Auth.UI;assembly=Firebase.Auth.UI.WPF"
+        Title="MainWindow" Height="450" Width="800">
+    <TabControl Name="tabMain">
+        <TabItem Header="Login">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Row="0">
+                    <Label Content="Email" FontSize="30" VerticalAlignment="Center"/>
+                    <TextBox Name="tbEmailLogin" Margin="80,20,50,20" FontSize="20"/>
+                </DockPanel>
+                <DockPanel Grid.Row="1">
+                    <Label Content="Password" FontSize="30" VerticalAlignment="Center"/>
+                    <TextBox Name="tbPasswordLogin" Margin="30,20,50,20" FontSize="20"/>
+                </DockPanel>
+                <Button Grid.Row="2" Content="LogIn" Name="btnLogin" Margin="50,20,50,20" FontSize="40" Click="btnLogin_Click"/>
+
+            </Grid>
+
+        </TabItem>
+        <TabItem Header="Sign Up">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Row="0">
+                    <Label Content="Email" FontSize="30" VerticalAlignment="Center"/>
+                    <TextBox Name="tbEmailSignup" Margin="80,20,50,20" FontSize="20"/>
+                </DockPanel>
+                <DockPanel Grid.Row="1">
+                    <Label Content="Password" FontSize="30" VerticalAlignment="Center"/>
+                    <TextBox Name="tbPasswordSignup" Margin="30,20,50,20" FontSize="20"/>
+                </DockPanel>
+                <DockPanel Grid.Row="2">
+                    <Label Content="Name" FontSize="30" VerticalAlignment="Center"/>
+                    <TextBox Name="tbNameSignup" Margin="70,20,50,20" FontSize="20"/>
+                </DockPanel>
+                <Button Grid.Row="3" Content="Sign Up" Name="btnSignup" Margin="50,20,50,20" FontSize="40" Click="btnSignup_Click"/>
+
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

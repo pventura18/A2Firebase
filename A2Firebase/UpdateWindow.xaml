@@ -1,0 +1,22 @@
+﻿<Window x:Class="A2Firebase.Images.UpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2Firebase.Images"
+        mc:Ignorable="d"
+        Title="UpdateWindow" Height="450" Width="800">
+    <DockPanel Background="Beige" Margin="10">
+        <TextBlock Text="Update" DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        <TextBlock Text="Character Name:" DockPanel.Dock="Top" Margin="10,15,10,0" FontSize="20"/>
+        <TextBlock Name="txtName" DockPanel.Dock="Top" Margin="5" FontSize="20" FontWeight="Bold"/>
+        <TextBlock Text="Character TV Show:" DockPanel.Dock="Top" Margin="10,15,10,0"/>
+        <TextBox Name="txtShow" DockPanel.Dock="Top" Margin="5"/>
+        <TextBlock Text="Character Description:" DockPanel.Dock="Top" Margin="10,15,10,0"/>
+        <TextBox Name="txtDescription" DockPanel.Dock="Top" Margin="5"/>
+        <TextBlock Text="Choose File to Upload:" DockPanel.Dock="Top" Margin="10,15,10,0"/>
+        <Button Content="Choose File" Name="btnChooseFile" Click="btnChooseFile_Click"  DockPanel.Dock="Top" Margin="10,15,10,0"/>
+        <TextBox Name="txtFile" DockPanel.Dock="Top" Margin="5"/>
+        <Button Content="UPDATE" Name="btnUpdate" Click="btnUpdate_Click"  DockPanel.Dock="Bottom" Margin="30"/>
+    </DockPanel>
+</Window>
